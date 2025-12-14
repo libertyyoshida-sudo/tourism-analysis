@@ -4,7 +4,7 @@ import requests
 import plotly.express as px
 
 # --- 設定 ---
-APP_ID = "YOUR_APP_ID_HERE"  # ★ここにIDを入力
+APP_ID = "1860c8594ed12a9ceb466b4aeda6be4a54a4e60e"  # ★ここにIDを入力
 API_VERSION = "3.0"
 BASE_URL = f"http://api.e-stat.go.jp/rest/{API_VERSION}/app/json/getStatsData"
 
@@ -102,4 +102,5 @@ if st.button("分析開始"):
             st.warning("相関が低いです。定員数が変化したか、データの定義が異なる可能性があります。")
 
     else:
+
         st.error("データの取得に失敗しました。IDまたはAPIキーを確認してください。")
